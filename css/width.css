@@ -1,0 +1,79 @@
+@charset "utf-8";
+
+
+/* 下のサンプルボックス */
+.box__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    width: 300px;
+    height: 200px;
+    color: #fff;
+    background-color: #000066;
+}
+
+/* 縦からフェードイン */
+/* aboutと最後の四角 */
+/* winterdrink */
+.js-fade {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(50px);
+    transition: opacity 2s,visibility 2s, transform 2s;
+}
+
+/* メルボルンに来た雰囲気 */
+.js-fade_3 {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(50px);
+    transition: opacity 4s,visibility 4s, transform 4s;
+}
+/* transform: translateX(0px);Y軸=縦から */
+.scroll_4 {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+}
+
+/* .scroll_4 {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+} */
+
+
+/* フラットホワイト */
+/* マップ */
+.js-fade_1 {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(80px);
+    transition: opacity 5s,visibility 5s, transform 5s;
+}
+/* transform: translateX(0px);X軸=横から */
+.scroll_4 {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0px);
+}
+
+.js-fade_1 {
+    visibility: hidden;
+    margin: 0;
+    padding: 0;
+  }
+  /* 要素を非表示にする */
+  /* .slick-initialized クラスの後に必ず書く */
+  
+  .js-fade_1.js-fade_1 {
+    visibility: visible;
+  }
+
+  
+
+
+
+
+

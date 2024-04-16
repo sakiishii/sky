@@ -1,0 +1,194 @@
+
+body{
+    font-family: '游明朝','Yu Mincho','Hiragino Mincho Pro',serif;
+  font-weight: 700;
+
+}
+
+
+
+/* スター */
+/* 星空の背景のスタイル */
+.stars {
+  position: relative;
+  width: 100%; 
+  /* 星空の横幅 */
+  min-height: 110vh; /* 星空の縦幅 */
+  /* background-image: linear-gradient(0deg, #00dedc, #115d89, #080f1c); */
+   /* 星空の背景色 */
+  background: linear-gradient(to right,#34c5f6 , #fff , #000);
+  overflow: hidden; /* 星が枠外にはみ出すのを防ぐ */
+}
+
+/* 星のスタイル */
+.star {
+  position: absolute;
+  display: block;
+  background-color: #fff; /* 星の色 */
+  border-radius: 50%;
+  box-shadow: 0 0 4px 2px rgba(#fff 0.2); 
+  /* 星の影 */
+  opacity: 0;
+  animation: twinkle 5s infinite;
+}
+
+/* 星がキラキラ光るアニメーション */
+@keyframes twinkle {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+.snow {
+    /*雪の色*/
+    color: snow;
+    /*雪の大きさ*/
+    font-size: 10px;
+    /*初期位置*/
+    position: fixed;
+    top: -5%;
+    /*雪を適当な幅で降らせる*/
+    text-shadow:
+    5vw   -100px 2px,
+    10vw  -400px 3px,
+    20vw  -500px 4px,
+    30vw  -580px 1px,
+    39vw  -250px 2px,
+    42vw  -340px 5px,
+    56vw  -150px 2px,
+    63vw  -180px 0,
+    78vw  -220px 4px,
+    86vw  -320px 9px,
+    94vw  -170px 7px;
+    /*雪アニメーション1*/
+    animation: roll 5s linear infinite;
+  }
+    /*2つめの雪アニメーション*/
+  .snow2nd{animation: anim 8s linear infinite;}
+  
+  @keyframes roll {
+      0% {transform:rotate(0deg);}
+     90% {opacity:1;}
+     100% {transform:rotate(20deg);top:100%;opacity:0;}
+  }
+  @keyframes anim {
+    100% {color:transparent;top:150%;}
+  }
+  .stars h2 {
+    /* max:50px min:30px */
+    font-size:clamp(1.875rem, 1.42rem + 2.27vw, 3.125rem);
+    text-align: center;
+    margin: 0;
+    padding-top: 30px;
+  }
+  .stars_text {
+    font-size: 24px;
+    text-align: center;
+  }
+.stars_container {
+    width: 100%;
+    display: flex;
+    margin-bottom: 10%;
+}
+
+.inner_1 {
+    flex: 1;
+    display: flex;
+    margin: auto 0;
+
+    
+}
+
+.inner_img {
+    display: block;
+}
+
+.inner_img_2 {
+  display: block;
+  margin: 0 auto;
+  order: 1;
+}
+
+.inner_p {
+    width: 350px;
+    height: 200px;
+   margin: auto;
+}
+
+.inner_p_2 {
+  width: 350px;
+  height: 200px;
+ margin: auto;
+}
+
+.inner_1 p,.inner_2 p {
+  text-align: left;
+}
+
+.inner_2 {
+  flex: 1;
+    display: flex;
+    margin: auto 0;
+    order: 1;
+}
+.choco_text{
+    margin: 0;
+    font-size: 22px;
+    border-bottom:1px solid red;
+}
+
+.ram_text{
+    margin: 0;
+    font-size: 22px;
+    border-bottom:1px solid green;
+}
+
+  
+  .fadein {
+    animation: fadein 3s ease-out forwards;
+  }
+  .fadein_2 {
+    animation: fadein 5s ease-out forwards;
+  }
+  @keyframes fadein {
+    0% {opacity: 0}
+    100% {opacity: 1}
+  }
+  @media screen and (max-width: 768px){
+.stars {
+  height: auto;
+  background: linear-gradient(#34c5f6 , #fff , #000);
+
+}
+    .stars_container,.inner_1,.inner_2 {
+      display: block;
+    }
+
+    .inner_img {
+      margin: 0 auto;
+  
+    }
+    .inner_p {
+      width: 80%;
+      height: auto;
+
+  }
+  .inner_p_2 {
+    width: 80%;
+    height: auto;
+    color: #fff;
+}
+  
+ 
+  
+  }
+
