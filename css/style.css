@@ -4,6 +4,19 @@ ctrl＋hで置換class idを変更できる
 ctrl＋fで検索
  ブレイクポイントタブレット768px
 スマホ幅375px */
+/* body::before {
+  content: "";
+  background: url(img/bg-sp.png) no-repeat center center;
+  background-size: cover;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  transform: translateZ(0);
+} */
 
 
 /* 右側の余白をなくす */
@@ -181,7 +194,7 @@ font-size:20px;
 .fixed-background {
   width: 100%;
   height: 100vh;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
