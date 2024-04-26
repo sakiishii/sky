@@ -4,19 +4,6 @@ ctrl＋hで置換class idを変更できる
 ctrl＋fで検索
  ブレイクポイントタブレット768px
 スマホ幅375px */
-/* body::before {
-  content: "";
-  background: url(img/bg-sp.png) no-repeat center center;
-  background-size: cover;
-  display: block;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: -1;
-  transform: translateZ(0);
-} */
 
 
 /* 右側の余白をなくす */
@@ -102,7 +89,6 @@ p{
 /* スライダー写真のサイズを調整する  */
 /* 高さはheightで変更するvwにすることでレスポンシブに対応できる */
 .slider img {
-  /* height: 40vw; */
   object-fit: cover;
 }
 /* レスポンシブにしたときに画像を全面表示にする */
@@ -122,7 +108,6 @@ p{
   position: absolute;
   top: 30%;
   right: 20%;
-  /* transform: translate(-50%,-50%); */
   /*センター寄せの修正*/
   z-index: 8;
 }
@@ -142,7 +127,6 @@ p{
   font-family: '游明朝','Yu Mincho','Hiragino Mincho Pro',serif;
   color: #000;
   font-weight: bold;
-  /* font-size: 1rem */
 }
 
 .slick-content_1 span {
@@ -150,7 +134,6 @@ p{
   font-family: '游明朝','Yu Mincho','Hiragino Mincho Pro',serif;
   color: #000;
   font-weight: bold;
-  /* font-size: 1rem */
 }
 
 /* 文字サイズmin:10px,max:35px */
@@ -159,7 +142,6 @@ p{
   color: #fff;
   font-family: '游明朝','Yu Mincho','Hiragino Mincho Pro',serif;
   font-weight: bold;
-  /* font-size: 1rem */
 display: flex;
 justify-content: center;
 align-items: center;
@@ -194,7 +176,7 @@ font-size:20px;
 .fixed-background {
   width: 100%;
   height: 100vh;
-  /* background-attachment: fixed; */
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -208,13 +190,10 @@ font-size:20px;
  
 .background-2 {
   background-image: url(../img/scroll__1.jpg);
-
 }
 
 .background-3 {
   background-image: url(../img/scroll__2.jpg);
- 
-
 }
 .background-4 {
   background-image: url(../img/scroll__3.jpg);
@@ -225,7 +204,7 @@ font-size:20px;
 .scroll {
   margin: 0 auto;
   width: 90%;
-  /* background-color: aqua; */
+
 }
 
 .scroll_recommend{
@@ -235,18 +214,12 @@ font-size:20px;
 .scroll_menu {
   width: 90%;
   min-height: 100vh;
-  /* display: flex; */
   margin: 20px auto;
-  /* align-items: center; */
-
-
 }
 
 .scroll_news {
   width: 90%;
-  /* display: flex; */
   margin: 0 auto;
-  /* align-items: center; */
   min-height: 100vh;
 }
 .scroll_shop {
@@ -281,26 +254,20 @@ font-size:20px;
 
 .recommend {
   width: 100%;
-  /* background-color: rgba(254, 200, 5, 0.7); */
   display: flex;
   margin: 0 auto;
   padding: 10px;
   border: 3px dashed #b38867 ;
-
 }
 
 .recommend_box {
   flex: 6;
   text-align: left;
-  /* padding-right: 40px; */
   padding: 10px;
-  
 }
 
 .recommend_title {
   font-size: 30px;
-
- 
 }
 
 .recommend_text {
@@ -312,25 +279,20 @@ font-size:20px;
 
 .recommend_attention {
   color: red;
-  
 }
 
 .recommend_photo {
   flex: 4;
-  /* margin-left: 20px; */
   background-image: url(../img/recommend_1.jpg);
   height: 330px;
   background-size: cover;
   background-position: center;
   border-radius: 50px;
-  /* background-color: tomato; */
-
 }
 
 
 /* メニュー */
 .takeaway {
-  /* max:24px min:16px */
   font-size: clamp(1rem, 0.818rem + 0.91vw, 1.5rem);
 }
 
@@ -343,13 +305,11 @@ display: flex;
 
 .menu_drink{
   flex: 1;
-  /* background-color: yellowgreen; */
   border: 2px dashed #fff;
 }
 
 .menu_food{
   flex: 1;
-  /* background-color: yellow; */
   border: 2px dashed #fff;
 }
 
@@ -425,7 +385,6 @@ display: flex;
   max-width: 1000px;
   height: auto;
   margin: 0 auto;
-  /* background-color: bisque; */
 }
 
 .news_title {
@@ -439,7 +398,6 @@ display: flex;
   height: 350px;
   border: 10px double #b38867;
   padding: 10px;
-  /* background-color: #fff; */
   overflow: scroll;
   word-break: keep-all;
   white-space: nowrap;
@@ -456,7 +414,6 @@ display: flex;
 
 }
 .news_box li span {
-  /* max:16px min:14px */
 font-size: clamp(0.875rem, 0.83rem + 0.23vw, 1rem);
 
 }
@@ -499,7 +456,6 @@ font-size: clamp(0.875rem, 0.83rem + 0.23vw, 1rem);
 }
 
 .shop_list {
-  /* background-color: aquamarine; */
   flex: 1;
 }
 
@@ -511,8 +467,6 @@ font-size: clamp(0.875rem, 0.83rem + 0.23vw, 1rem);
 }
 .shop_map {
   flex: 1;
-  /* border: 2px dashed #ccc; */
-  /* background-color: #fff; */
   border-radius: 5px;
 }
 
@@ -522,14 +476,12 @@ font-size: clamp(0.875rem, 0.83rem + 0.23vw, 1rem);
   /* 繰り返し */
   flex-wrap: wrap;
   width: 100%;
-  
 }
 
 .shop_inner dt {
   width: 35%;
   padding: 20px 0;
   border-bottom: 1px solid #fff;
-  /* background-color: #fff; */
 }
 
 .shop_inner dd {
@@ -538,7 +490,6 @@ font-size: clamp(0.875rem, 0.83rem + 0.23vw, 1rem);
   width: 65%;
   padding: 20px 0;
   border-bottom: 1px solid #fff;
-  /* background-color: beige; */
 }
 
 
@@ -830,15 +781,10 @@ text-decoration: none;
 }
 
 /* ショップ */
-
-
 .shop_box {
   display: block;
   
 }
-
-
-
 .menu_box {
 display: block;
 }
@@ -890,6 +836,5 @@ display: none;
 #pagetop_1 {
   display: none!important;
 }
-
 
 }
